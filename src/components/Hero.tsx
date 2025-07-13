@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-electric-100 via-amber-50 to-neon-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <section id="me" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-electric-100 via-amber-50 to-neon-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           animate={{
@@ -167,7 +167,7 @@ const Hero: React.FC = () => {
 
           <motion.div
             variants={itemVariants}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+            className="absolute bottom-8 left-1/2 right-1/2 transform -translate-x-1/2"
           >
             <motion.div
               animate={{ y: [0, 10, 0] }}

@@ -17,10 +17,12 @@ const Header: React.FC = () => {
   }, []);
 
   const navItems = [
+    { href: '#me', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#experience', label: 'Experience' },
+    { href: '#pocs', label: 'POCs' },
     { href: '#contact', label: 'Contact' },
   ];
 

@@ -3,8 +3,9 @@ import { useState, useEffect } from 'react';
 export const useTheme = () => {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') === 'dark' ||
-        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      const savedTheme = localStorage.getItem('theme');
+      // Default to light if no theme is set
+      return savedTheme === 'dark';
     }
     return false;
   });
@@ -20,5 +21,5 @@ export const useTheme = () => {
     }
   }, [isDark]);
 
-  return { isDark, toggleTheme: () => setIsDark(!isDark) };
+  return { isDark, toggleTheme: () => setIsDark((prev) => !prev) };
 };

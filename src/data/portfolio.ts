@@ -1,4 +1,10 @@
-import { Skill, Project, Experience, Testimonial, BlogPost } from '../types';
+import { Skill, Project, Experience, } from '../types';
+import espo from '../assests/espo.png'
+import tracker from '../assests/tracker.png'
+import cc from '../assests/cc.png'
+import benefits from '../assests/benefits.png'
+import exam from '../assests/exam.png'
+import sat from '../assests/sat.png'
 
 export const skills: Skill[] = [
   { name: 'TypeScript', level: 95, category: 'Languages' },
@@ -66,7 +72,7 @@ export const projects: Project[] = [
     title: 'Common Components With React',
     description:
       'Developed a scalable React-based component library for 13+ cross-functional teams, enabling consistent UI, faster development cycles, and seamless integration across projects. Leveraged Material UI, React Context, and ensured test coverage with Jest. Automated builds and deployments via Jenkins.',
-    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: cc,
     tech: ['React', 'React Context', 'Jest', 'Material UI', 'Jenkins', 'Figma'],
     github: '',
     live: '',
@@ -77,7 +83,7 @@ export const projects: Project[] = [
     title: 'Project Tracker',
     description:
       'Built a backend system using Spring Boot and MyBatis to manage and track project timelines and sprint performance. Secured APIs with authentication and authorization, and optimized data access using advanced SQL with CTEs and joins. Deployed using Azure CI/CD pipelines.',
-    image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: tracker,
     tech: ['Java', 'Spring Boot', 'MyBatis', 'PostgreSQL', 'Azure DevOps'],
     github: '',
     live: '',
@@ -88,7 +94,7 @@ export const projects: Project[] = [
     title: 'ESPO – Organizational Sports Platform',
     description:
       'Built an engaging internal sports tournament application with animated leaderboards, role-based access control, and intuitive user flows. Used React with Context API for dynamic UIs and Spring Boot for backend services. Developed configurable admin tools and integrated Framer Motion for visually appealing player challenges and finale dashboards.',
-    image: 'https://images.pexels.com/photos/5327584/pexels-photo-5327584.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: espo,
     tech: ['Full Stack', 'React', 'Context API', 'Framer Motion', 'Spring Boot', 'Spring JPA'],
     github: '',
     live: '',
@@ -99,7 +105,7 @@ export const projects: Project[] = [
     title: 'Benefits Portal',
     description:
       'Developed a full-stack employee benefits platform with React and Flask. Engineered secure RESTful APIs with SQLAlchemy and Flask-Migrate for seamless data handling and schema versioning. Built features like Excel report generation and dynamic file storage systems. On the frontend, implemented the PF module and reusable UI components using React and Context API to ensure consistent user experience.',
-    image: 'https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: benefits,
     tech: ['Python', 'Flask', 'SQLAlchemy', 'React', 'Context API', 'Flask-Migrate'],
     github: '',
     live: '',
@@ -110,7 +116,7 @@ export const projects: Project[] = [
     title: 'AI-Powered SAT Prep Platform',
     description:
       'Developed a personalized SAT exam preparation platform with AI-driven features using React. Created admin tools for managing student reports and question feedback. Integrated Stripe for payments and implemented dynamic visualizations like donut and pie charts for progress tracking. Used AWS Amplify and Cognito for secure authentication, and customized Amplify components to match branding. Leveraged Redux Toolkit for optimized state and API data management.',
-    image: 'https://images.pexels.com/photos/3184456/pexels-photo-3184456.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: exam,
     tech: [
       'React',
       'Redux Toolkit',
@@ -129,7 +135,7 @@ export const projects: Project[] = [
     title: 'SAT Platform Backend & API Services',
     description:
       'Designed and developed robust backend services using Django to support an AI-powered SAT preparation platform. Built secure, scalable RESTful APIs for student assessments, reports, feedback mechanisms, and user roles. Implemented dynamic filtering and aggregation logic for performance insights. Ensured seamless integration with frontend via clean API contracts and maintained modular code structure for reusability and scalability.',
-    image: 'https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: sat,
     tech: ['Django', 'DRF', 'PostgreSQL', 'AWS', 'Docker', 'GitHub Actions'],
     github: '',
     live: '',
@@ -174,63 +180,6 @@ export const experiences: Experience[] = [
     ],
   },
 ]
-
-export const testimonials: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Sarah Johnson',
-    role: 'Product Manager',
-    company: 'TechCorp Solutions',
-    content: 'Working with Alex has been incredible. Their attention to detail and ability to deliver complex features on time is unmatched.',
-    avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: '2',
-    name: 'Michael Chen',
-    role: 'CTO',
-    company: 'Digital Innovations',
-    content: 'Alex brought fresh ideas and exceptional technical skills to our team. Their code quality and problem-solving abilities are outstanding.',
-    avatar: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: '3',
-    name: 'Emily Rodriguez',
-    role: 'Design Lead',
-    company: 'StartupX',
-    content: 'The collaboration with Alex was seamless. They perfectly translated our designs into beautiful, functional interfaces.',
-    avatar: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-];
-
-export const blogPosts: BlogPost[] = [
-  {
-    id: '1',
-    title: 'Building Scalable React Applications',
-    excerpt: 'Learn the best practices for structuring and scaling React applications for enterprise use.',
-    date: '2024-01-15',
-    readTime: '8 min read',
-    image: 'https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['React', 'Architecture', 'Best Practices'],
-  },
-  {
-    id: '2',
-    title: 'The Future of Web Development',
-    excerpt: 'Exploring emerging trends and technologies that will shape the future of web development.',
-    date: '2024-01-08',
-    readTime: '6 min read',
-    image: 'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['Web Development', 'Trends', 'Technology'],
-  },
-  {
-    id: '3',
-    title: 'Optimizing Performance in Modern Apps',
-    excerpt: 'Practical techniques for improving application performance and user experience.',
-    date: '2024-01-01',
-    readTime: '10 min read',
-    image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['Performance', 'Optimization', 'UX'],
-  },
-];
 
 export const pocs = [
   {

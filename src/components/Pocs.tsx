@@ -75,6 +75,31 @@ const POCs: React.FC = () => {
                         ))}
                     </motion.div>
                 </motion.div>
+                <motion.div variants={itemVariants} className="text-center mt-12">
+                    <a
+                        href="https://github.com/Dhanunjaya235?tab=repositories"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <motion.button
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: "0 20px 40px rgba(3, 169, 244, 0.5)"
+                            }}
+                            whileTap={{ scale: 0.95 }}
+                            className="px-8 py-4 bg-gradient-to-r from-electric-500 to-neon-500 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 relative overflow-hidden group"
+                        >
+                            <motion.div
+                                className="absolute inset-0 bg-gradient-to-r from-neon-600 to-electric-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                initial={false}
+                            />
+                            <span className="relative z-10">
+                                View All POCs on GitHub
+                            </span>
+                        </motion.button>
+                    </a>
+                </motion.div>
+
             </div>
         </section>
     );
